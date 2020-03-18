@@ -54,20 +54,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        repo = new UserRepo(getApplication());
-
-        //Room test
-        User user = new User();
-        user.setName("Room");
-        user.setMark("RoomNOta");
-        repo.insert(user);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                userRoom = repo.getAll();
-                Log.e("TAG",userRoom.getValue().get(0).getName());
-            }
-        }, 10000);
+//        repo = new UserRepo(getApplication());
+//
+//        //Room test
+//        User user = new User();
+//        user.setName("Room");
+//        user.setMark("RoomNOta");
+//        repo.insert(user);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            public void run() {
+//                userRoom = repo.getAll();
+//                Log.e("TAG",userRoom.getValue().get(0).getName());
+//            }
+//        }, 10000);
     }
 
     private void addUserToRecycler(){
